@@ -1,15 +1,16 @@
-import { IHeaderContentMenuOptions } from "../../types/GeneralTypes";
 import { Menu, Typography } from "antd";
 import { menuItems } from "../../constants/menuItens";
 import { Faker, base, pt_BR } from "@faker-js/faker";
+import { useContext } from "react";
+import { GeneralContext } from "../../contexts/GeneralContext";
 
 const BrazilianFaker = new Faker({
   locale: [pt_BR, base],
 });
 
-const HeaderContentMenuOptions: React.FC<IHeaderContentMenuOptions> = ({
-  setAddressesList,
-}) => {
+const HeaderContentMenuOptions: React.FC = () => {
+  const { setAddressesList } = useContext(GeneralContext);
+
   function changeAddressesListLength(length: number) {
     const newAddressesList = Array.from({ length: length }, () => ({
       street: BrazilianFaker.location.street(),

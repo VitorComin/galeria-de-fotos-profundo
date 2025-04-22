@@ -1,7 +1,11 @@
 import { Col, List, Typography } from "antd";
-import { IAddresses, IAddressesList } from "../../types/GeneralTypes";
+import { IAddresses } from "../../types/GeneralTypes";
+import { useContext } from "react";
+import { GeneralContext } from "../../contexts/GeneralContext";
 
-const AddressesList: React.FC<IAddressesList> = ({ addressesList }) => {
+const AddressesList: React.FC = () => {
+  const { addressesList } = useContext(GeneralContext);
+
   return (
     <List
       size="large"

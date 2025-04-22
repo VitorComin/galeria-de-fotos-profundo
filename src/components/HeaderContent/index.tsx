@@ -1,8 +1,7 @@
 import { Space, Typography } from "antd";
-import { IHeaderContent } from "../../types/GeneralTypes";
 import HeaderContentMenu from "../HeaderContentMenu";
 
-const HeaderContent: React.FC<IHeaderContent> = ({ setAddressesList }) => {
+const HeaderContent: React.FC = () => {
   return (
     <>
       <Space>
@@ -10,7 +9,7 @@ const HeaderContent: React.FC<IHeaderContent> = ({ setAddressesList }) => {
           Lista de Endereços
         </Typography.Title>
       </Space>
-      <HeaderContentMenu setAddressesList={setAddressesList} />
+      <HeaderContentMenu />
     </>
   );
 };

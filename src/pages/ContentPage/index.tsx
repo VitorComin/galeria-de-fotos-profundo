@@ -1,8 +1,7 @@
-import { IContentPage } from "../../types/GeneralTypes";
 import ContentLayout from "../../components/ContentLayout";
 
-const ContentPage: React.FC<IContentPage> = ({ addressesList }) => {
-  return <ContentLayout addressesList={addressesList} />;
+const ContentPage: React.FC = () => {
+  return <ContentLayout />;
 };
 
 export default ContentPage;

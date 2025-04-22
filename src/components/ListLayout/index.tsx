@@ -1,10 +1,9 @@
-import { IListLayout } from "../../types/GeneralTypes";
 import AddressesList from "../AddressesList";
 
-const ListLayout: React.FC<IListLayout> = ({ addressesList }) => {
+const ListLayout: React.FC = () => {
   return (
     <>
-      <AddressesList addressesList={addressesList} />
+      <AddressesList />
     </>
   );
 };
