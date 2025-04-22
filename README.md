@@ -1,2 +1,3 @@
-A componentização plana, também conhecida como flat component structure, é uma abordagem de design e organização em desenvolvimento de interfaces, particularmente no contexto de frameworks como React. Essa metodologia foca na criação de uma hierarquia de componentes onde os filhos estão diretamente aninhados dentro de um componente pai, sem múltiplos níveis de aninhamento.
 # galeria-de-fotos-profundo
+
+A componentização profunda, ou deep component structure, é uma forma de organizar a interface em que os componentes são divididos em vários níveis hierárquicos, com componentes pais delegando partes específicas da interface a componentes filhos, que por sua vez também podem conter seus próprios filhos. Essa abordagem favorece a reutilização de código e a separação de responsabilidades, mas pode tornar a estrutura mais complexa e difícil de manter, especialmente em projetos maiores.
