@@ -1,18 +1,14 @@
-import { Faker, base, pt_BR } from "@faker-js/faker";
 import { IHeaderContentMenu } from "../../types/GeneralTypes";
 import HeaderContentMenuOptions from "../HeaderContentMenuOptions";
-
-const BrazilianFaker = new Faker({
-  locale: [pt_BR, base],
-});
+import { Space } from "antd";
 
 const HeaderContentMenu: React.FC<IHeaderContentMenu> = ({
   setAddressesList,
 }) => {
   return (
-    <>
+    <Space>
       <HeaderContentMenuOptions setAddressesList={setAddressesList} />
-    </>
+    </Space>
   );
 };
 

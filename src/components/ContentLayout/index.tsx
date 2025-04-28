@@ -1,5 +1,5 @@
-import { Col, List, Space, Typography } from "antd";
-import { IAddresses, IContentLayout } from "../../types/GeneralTypes";
+import { Space, Typography } from "antd";
+import { IContentLayout } from "../../types/GeneralTypes";
 import ListLayout from "../ListLayout";
 
 const ContentLayout: React.FC<IContentLayout> = ({ addressesList }) => {
@@ -13,7 +13,7 @@ const ContentLayout: React.FC<IContentLayout> = ({ addressesList }) => {
           <br />
           <br />
           O objetivo é ver a performance da aplicação usando a componentização
-          plana com gerenciamento de estado relativo.
+          profunda com gerenciamento de estado relativo.
           <br />
           <br />
           Os resultados serão usados para o MVP do meu TCC.
