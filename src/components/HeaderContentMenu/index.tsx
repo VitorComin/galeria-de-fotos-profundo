@@ -1,15 +1,11 @@
-import { Faker, base, pt_BR } from "@faker-js/faker";
+import { Space } from "antd";
 import HeaderContentMenuOptions from "../HeaderContentMenuOptions";
-
-const BrazilianFaker = new Faker({
-  locale: [pt_BR, base],
-});
 
 const HeaderContentMenu: React.FC = () => {
   return (
-    <>
+    <Space>
       <HeaderContentMenuOptions />
-    </>
+    </Space>
   );
 };
 
