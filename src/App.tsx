@@ -5,9 +5,11 @@ import LayoutFooter from "./components/LayoutFooter";
 import ContentPage from "./pages/ContentPage";
 import { useState } from "react";
 import { IAddresses } from "./types/GeneralTypes";
+import { simulateSimpleComponentWork } from "./utils/simulateSimpleComponentWork";
 
 function App() {
   const [addressesList, setAddressesList] = useState<IAddresses[]>([]);
+  const componentWorkResult = simulateSimpleComponentWork();
 
   return (
     <Layout style={{ height: "100vh" }}>

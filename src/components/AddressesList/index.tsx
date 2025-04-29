@@ -1,10 +1,14 @@
 import { Col, List, Typography } from "antd";
 import { IAddresses, IAddressesList } from "../../types/GeneralTypes";
+import { simulateSimpleComponentWork } from "../../utils/simulateSimpleComponentWork";
 
 const AddressesList: React.FC<IAddressesList> = ({ addressesList }) => {
+  const componentWorkResult = simulateSimpleComponentWork();
+
   return (
     <List
       size="large"
+      style={{ borderColor: "#f0f0f0" }}
       header={
         <Typography.Text
           strong
