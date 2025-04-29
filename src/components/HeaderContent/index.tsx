@@ -1,7 +1,10 @@
 import { Space, Typography } from "antd";
 import HeaderContentMenu from "../HeaderContentMenu";
+import { simulateSimpleComponentWork } from "../../utils/simulateSimpleComponentWork";
 
 const HeaderContent: React.FC = () => {
+  const componentWorkResult = simulateSimpleComponentWork();
+
   return (
     <>
       <Space>

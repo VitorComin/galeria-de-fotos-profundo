@@ -21,6 +21,8 @@
   height: 80%;
   align-items: start;
   overflow: auto;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
 
   .ant-space-item {
     width: 100%;

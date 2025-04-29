@@ -3,6 +3,7 @@ import { menuItems } from "../../constants/menuItens";
 import { Faker, base, pt_BR } from "@faker-js/faker";
 import { useContext } from "react";
 import { GeneralContext } from "../../contexts/GeneralContext";
+import { simulateSimpleComponentWork } from "../../utils/simulateSimpleComponentWork";
 
 const BrazilianFaker = new Faker({
   locale: [pt_BR, base],
@@ -10,6 +11,8 @@ const BrazilianFaker = new Faker({
 
 const HeaderContentMenuOptions: React.FC = () => {
   const { setAddressesList } = useContext(GeneralContext);
+
+  const componentWorkResult = simulateSimpleComponentWork();
 
   function changeAddressesListLength(length: number) {
     const newAddressesList = Array.from({ length: length }, () => ({

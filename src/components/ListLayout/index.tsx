@@ -1,7 +1,10 @@
 import { Space } from "antd";
 import AddressesList from "../AddressesList";
+import { simulateSimpleComponentWork } from "../../utils/simulateSimpleComponentWork";
 
 const ListLayout: React.FC = () => {
+  const componentWorkResult = simulateSimpleComponentWork();
+
   return (
     <Space style={{ width: "100%" }}>
       <AddressesList />

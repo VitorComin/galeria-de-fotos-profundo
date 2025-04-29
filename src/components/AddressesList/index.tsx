@@ -2,13 +2,16 @@ import { Col, List, Typography } from "antd";
 import { IAddresses } from "../../types/GeneralTypes";
 import { useContext } from "react";
 import { GeneralContext } from "../../contexts/GeneralContext";
+import { simulateSimpleComponentWork } from "../../utils/simulateSimpleComponentWork";
 
 const AddressesList: React.FC = () => {
   const { addressesList } = useContext(GeneralContext);
+  const componentWorkResult = simulateSimpleComponentWork();
 
   return (
     <List
       size="large"
+      style={{ borderColor: "#f0f0f0" }}
       header={
         <Typography.Text
           strong

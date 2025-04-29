@@ -1,16 +1,17 @@
-import { Space, Typography } from "antd";
+import { Card, Space, Typography } from "antd";
 import ListLayout from "../ListLayout";
 import { useContext } from "react";
 import { GeneralContext } from "../../contexts/GeneralContext";
+import { simulateSimpleComponentWork } from "../../utils/simulateSimpleComponentWork";
 
 const ContentLayout: React.FC = () => {
   const { addressesList } = useContext(GeneralContext);
+  const componentWorkResult = simulateSimpleComponentWork();
 
   return (
     <Space className="layout-content-container">
-      {addressesList?.length > 0 ? (
-        <ListLayout />
-      ) : (
+      <ListLayout />
+      <Card>
         <Typography.Paragraph>
           Escolha uma opção de tamanho de objeto.
           <br />
@@ -21,7 +22,7 @@ const ContentLayout: React.FC = () => {
           <br />
           Os resultados serão usados para o MVP do meu TCC.
         </Typography.Paragraph>
-      )}
+      </Card>
     </Space>
   );
 };
