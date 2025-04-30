@@ -10,6 +10,10 @@ export interface IHeaderContentMenu {
   setAddressesList: React.Dispatch<React.SetStateAction<IAddresses[]>>;
 }
 
+export interface IHeaderContentMenuBody {
+  setAddressesList: React.Dispatch<React.SetStateAction<IAddresses[]>>;
+}
+
 export interface IHeaderContentMenuOptions {
   setAddressesList: React.Dispatch<React.SetStateAction<IAddresses[]>>;
 }
@@ -30,6 +34,10 @@ export interface IContentLayout {
 }
 
 export interface IListLayout {
+  addressesList: IAddresses[];
+}
+
+export interface IAddressListLayout {
   addressesList: IAddresses[];
 }
 

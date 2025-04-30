@@ -1,6 +1,6 @@
 import { IHeaderContentMenu } from "../../types/GeneralTypes";
 import { simulateSimpleComponentWork } from "../../utils/simulateSimpleComponentWork";
-import HeaderContentMenuOptions from "../HeaderContentMenuOptions";
+import HeaderContentMenuBody from "../HeaderContentMenuBody";
 import { Space } from "antd";
 
 const HeaderContentMenu: React.FC<IHeaderContentMenu> = ({
@@ -10,7 +10,7 @@ const HeaderContentMenu: React.FC<IHeaderContentMenu> = ({
 
   return (
     <Space>
-      <HeaderContentMenuOptions setAddressesList={setAddressesList} />
+      <HeaderContentMenuBody setAddressesList={setAddressesList} />
     </Space>
   );
 };
