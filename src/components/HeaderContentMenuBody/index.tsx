@@ -1,15 +1,15 @@
 import { Space } from "antd";
+import HeaderContentMenuOptions from "../HeaderContentMenuOptions";
 import { simulateSimpleComponentWork } from "../../utils/simulateSimpleComponentWork";
-import HeaderContentMenuBody from "../HeaderContentMenuBody";
 
-const HeaderContentMenu: React.FC = () => {
+const HeaderContentMenuBody: React.FC = () => {
   const componentWorkResult = simulateSimpleComponentWork();
 
   return (
-    <Space style={{ display: "flex" }}>
-      <HeaderContentMenuBody />
+    <Space>
+      <HeaderContentMenuOptions />
     </Space>
   );
 };
 
-export default HeaderContentMenu;
+export default HeaderContentMenuBody;

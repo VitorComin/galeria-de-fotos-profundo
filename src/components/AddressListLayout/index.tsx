@@ -1,15 +1,16 @@
 import { Space } from "antd";
+import React from "react";
+import AddressesList from "../AddressesList";
 import { simulateSimpleComponentWork } from "../../utils/simulateSimpleComponentWork";
-import HeaderContentMenuBody from "../HeaderContentMenuBody";
 
-const HeaderContentMenu: React.FC = () => {
+const AddressListLayout: React.FC = () => {
   const componentWorkResult = simulateSimpleComponentWork();
 
   return (
-    <Space style={{ display: "flex" }}>
-      <HeaderContentMenuBody />
+    <Space style={{ width: "100%" }}>
+      <AddressesList />
     </Space>
   );
 };
 
-export default HeaderContentMenu;
+export default AddressListLayout;
