@@ -6,7 +6,7 @@ const HeaderContentMenuBody: React.FC = () => {
   const componentWorkResult = simulateSimpleComponentWork();
 
   return (
-    <Space>
+    <Space style={{ display: "block" }}>
       <HeaderContentMenuOptions />
     </Space>
   );
